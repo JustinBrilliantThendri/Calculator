@@ -1,0 +1,89 @@
+*{
+    box-sizing : border-box;
+    margin : 0;
+    padding : 0;
+    font-family : monospace;
+    transition : 0.25s;
+}
+
+.container{
+    position : absolute;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    width : 100%;
+    height : 100%;
+    background-color : #313131;
+}
+
+.calculator{
+    overflow : hidden;
+    display : flex;
+    flex-direction : column;
+    background-color : #414141;
+    border-radius : 15px;
+    width : 425px;
+    height : 525px;
+    padding : 0px 10px;
+    padding-bottom : 15px;
+}
+
+.button{
+    display : flex;
+    justify-content : center;
+    margin-top : 15px;
+    height : 25%;
+    width : 100%;
+}
+
+input[type=text]{
+    width : 76.285%;
+    margin : 0px 5px;
+    border-radius : 5px;
+    border : 2px solid #525252;
+    background-color : transparent;
+    text-align : right;
+    outline : none;
+    font-size : 35px;
+    color : #F5F5F5;
+    font-family : calibri;
+}
+
+input[type=text]:hover{
+    background-color : #525252;
+}
+
+button{
+    width : 25%;
+    margin : 0px 5px;
+    background-color : #525252;
+    border : none;
+    border-radius : 5px;
+    color : #F5F5F5;
+    font-size : 35px;
+}
+
+.clear{
+    width : 23.715%;
+}
+
+button:hover{
+    background-color : #494949;
+}
+
+button:active{
+    background-color : #3c3c3c;
+}
+
+@media screen and (max-width : 500px){
+    .calculator{
+        width : 350px;
+        height : 425px;
+    }
+    button{
+        font-size : 25px;
+    }
+    input[type=text]{
+        font-size : 25px;
+    }
+}

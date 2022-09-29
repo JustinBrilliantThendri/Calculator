@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <div class="button">
+                    <input id="output" type="text" value="" readonly>
+                    <button type="button" class="clear" onclick="clicked('c')">C</button>
+                </div>
+                <div class="button">
+                    <button type="button" onclick="clicked('7')">7</button>
+                    <button type="button" onclick="clicked('8')">8</button>
+                    <button type="button" onclick="clicked('9')">9</button>
+                    <button type="button" onclick="clicked(':')">:</button>
+                </div>
+                <div class="button">
+                    <button type="button" onclick="clicked('6')">6</button>
+                    <button type="button" onclick="clicked('5')">5</button>
+                    <button type="button" onclick="clicked('4')">4</button>
+                    <button type="button" onclick="clicked('x')">x</button>
+                </div>
+                <div class="button">
+                    <button type="button" onclick="clicked('3')">3</button>
+                    <button type="button" onclick="clicked('2')">2</button>
+                    <button type="button" onclick="clicked('1')">1</button>
+                    <button type="button" onclick="clicked('-')">-</button>
+                </div>
+                <div class="button">
+                    <button type="button" onclick="clicked('=')">=</button>
+                    <button type="button" onclick="clicked('0')">0</button>
+                    <button type="button" onclick="clicked('.')">.</button>
+                    <button type="button" onclick="clicked('+')">+</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
